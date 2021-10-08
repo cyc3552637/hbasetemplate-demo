@@ -1,2 +1,2 @@
 # hbasetemplate-demo
-SSM+REDIS+MUI+Hbase
+SSM+redis+mui+Hbase
