@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blue Moon - Responsive Admin Dashboard</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="description" content="Blue Moon - Responsive Admin Dashboard" />
+    <meta name="keywords" content="Notifications, Admin, Dashboard, Bootstrap3, Sass, transform, CSS3, HTML5, Web design, UI Design, Responsive Dashboard, Responsive Admin, Admin Theme, Best Admin UI, Bootstrap Theme, Wrapbootstrap, Bootstrap, bootstrap.gallery" />
+    <meta name="author" content="Bootstrap Gallery" />
+    <link rel="shortcut icon" href="img/favicon.ico">
+    
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/new.css" rel="stylesheet"> 
+    <link href="../assets/css/charts-graphs.css" rel="stylesheet">
+
+    <link href="../assets/fonts/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+
+    <!-- Main Container start -->
+    <div class="dashboard-container">
+
+      <div class="container">
+      
+        <!-- Dashboard Wrapper Start -->
+        <div class="dashboard-wrapper">
+          
+          <!-- Left Sidebar Start -->
+          <div class="left-sidebar">
+
+            <!-- Row Start -->
+            <div class="row">
+              <div class="col-lg-12 col-md-12">
+                <div class="widget">
+                  <div class="widget-header">
+                    <div class="title">
+                      Vertical Chart
+                    </div>
+                    <span class="tools">
+                      <i class="fa fa-cogs"></i>
+                    </span>
+                  </div>
+                  <div class="widget-body">
+                    <div id="flot-placeholder" class="chart-height"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Row End -->
+
+            <!-- Row Start -->
+            <div class="row">
+              <div class="col-lg-6 col-md-6">
+                <div class="widget">
+                  <div class="widget-header">
+                    <div class="title">
+                      Realtime Chart
+                    </div>
+                  </div>
+                  <div class="widget-body">
+                    <div id="stacked-vertical-chart" class="chart-height"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <div class="widget">
+                  <div class="widget-header">
+                    <div class="title">
+                      Area Chart
+                    </div>
+                  </div>
+                  <div class="widget-body">
+                    <div id="area-chart" class="chart-height"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Row End -->
+
+            <!-- Row Start -->
+            <div class="row">
+              <div class="col-lg-4 col-md-4">
+                <div class="widget">
+                  <div class="widget-header">
+                    <div class="title">
+                      Rectangular Pie
+                    </div>
+                  </div>
+                  <div class="widget-body">
+                    <div id="rectangular-pie" class="chart-height"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4">
+                <div class="widget">
+                  <div class="widget-header">
+                    <div class="title">
+                      Scatter Chart
+                    </div>
+                  </div>
+                  <div class="widget-body">
+                    <div id="scatter-chart" class="chart-height"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4">
+                <div class="widget">
+                  <div class="widget-header">
+                    <div class="title">
+                      Line Chart
+                    </div>
+                  </div>
+                  <div class="widget-body">
+                    <div id="line-chart" class="chart-height"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Row End -->
+
+            <!-- Row Start -->
+            <div class="row">
+              <div class="col-lg-6 col-md-6">
+                <div class="widget">
+                  <div class="widget-header">
+                    <div class="title">
+                      Area Chart
+                    </div>
+                  </div>
+                  <div class="widget-body">
+                    <div id="stacked-area-chart" class="chart-height"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <div class="widget">
+                  <div class="widget-header">
+                    <div class="title">
+                      Donut Chart
+                    </div>
+                  </div>
+                  <div class="widget-body">
+                    <div id="donut-chart" class="chart-height"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Row End -->
+
+            <!-- Row Start -->
+            <div class="row">
+              <div class="col-lg-6 col-md-6">
+                <div class="widget">
+                  <div class="widget-header">
+                    <div class="title">
+                      Pie Chart
+                    </div>
+                  </div>
+                  <div class="widget-body">
+                    <div id="pie-chart" class="chart-height"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <div class="widget">
+                  <div class="widget-header">
+                    <div class="title">
+                      Horizontal Chart
+                    </div>
+                  </div>
+                  <div class="widget-body">
+                    <div id="stacked-horizontal-chart" class="chart-height"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Row End -->
+
+            <!-- Row Start -->
+            <div class="row">
+              <div class="col-lg-6 col-md-6">
+                <div class="widget">
+                  <div class="widget-header">
+                    <div class="title">
+                      Vertical Chart
+                    </div>
+                  </div>
+                  <div class="widget-body">
+                    <div id="vertical-chart" class="chart-height"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <div class="widget">
+                  <div class="widget-header">
+                    <div class="title">
+                      Horizontal Chart
+                    </div>
+                  </div>
+                  <div class="widget-body">
+                    <div id="horizontal-chart" class="chart-height"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Row End -->
+
+          </div>
+          <!-- Left Sidebar End -->
+
+          <!-- Right Sidebar Start -->
+          <div class="right-sidebar">
+            
+            <div class="wrapper">
+              <div id="scrollbar">
+                <div class="scrollbar">
+                  <div class="track">
+                    <div class="thumb">
+                      <div class="end">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="viewport">
+                  <div class="overview">
+                    <div class="featured-articles-container">
+                      <h5 class="heading">
+                        Recent Articles
+                      </h5>
+                      <div class="articles">
+                        <a href="#">
+                          <span class="label-bullet">
+                            &nbsp;
+                          </span>
+                          Hosting Made For WordPress
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet">
+                            &nbsp;
+                          </span>
+                          Reinvent cutting-edge
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet">
+                            &nbsp;
+                          </span>
+                          partnerships models 24/7
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet">
+                            &nbsp;
+                          </span>
+                          Eyeballs frictionless
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet">
+                            &nbsp;
+                          </span>
+                          Empower deliver innovate
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet">
+                            &nbsp;
+                          </span>
+                          Portals technologies
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet">
+                            &nbsp;
+                          </span>
+                          Collaborative innovate
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet">
+                            &nbsp;
+                          </span>
+                          Mashups experiences plug
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet">
+                            &nbsp;
+                          </span>
+                          Portals technologies
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet">
+                            &nbsp;
+                          </span>
+                          Collaborative innovate
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet">
+                            &nbsp;
+                          </span>
+                          Mashups experiences plug
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet">
+                            &nbsp;
+                          </span>
+                          B2B plug and play
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet">
+                            &nbsp;
+                          </span>
+                          Need some interesting
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet">
+                            &nbsp;
+                          </span>
+                          Portals technologies
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet">
+                            &nbsp;
+                          </span>
+                          Collaborative innovate
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet">
+                            &nbsp;
+                          </span>
+                          Portals technologies
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet">
+                            &nbsp;
+                          </span>
+                          Collaborative innovate
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet">
+                            &nbsp;
+                          </span>
+                          Mashups experiences plug
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet">
+                            &nbsp;
+                          </span>
+                          B2B plug and play
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet">
+                            &nbsp;
+                          </span>
+                          Need some interesting
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet">
+                            &nbsp;
+                          </span>
+                          Portals technologies
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet">
+                            &nbsp;
+                          </span>
+                          Collaborative innovate
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet">
+                            &nbsp;
+                          </span>
+                          Mashups experiences plug
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet">
+                            &nbsp;
+                          </span>
+                          Need some interesting
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet">
+                            &nbsp;
+                          </span>
+                          Portals technologies
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet">
+                            &nbsp;
+                          </span>
+                          Collaborative innovate
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet">
+                            &nbsp;
+                          </span>
+                          Mashups experiences plug
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet">
+                            &nbsp;
+                          </span>
+                          B2B plug and play
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet">
+                            &nbsp;
+                          </span>
+                          Need some interesting
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet">
+                            &nbsp;
+                          </span>
+                          Portals technologies
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet">
+                            &nbsp;
+                          </span>
+                          Collaborative innovate
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet">
+                            &nbsp;
+                          </span>
+                          Portals technologies
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet">
+                            &nbsp;
+                          </span>
+                          Collaborative innovate
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet">
+                            &nbsp;
+                          </span>
+                          Mashups experiences plug
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet">
+                            &nbsp;
+                          </span>
+                          B2B plug and play
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet">
+                            &nbsp;
+                          </span>
+                          Need some interesting
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet">
+                            &nbsp;
+                          </span>
+                          Portals technologies
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet">
+                            &nbsp;
+                          </span>
+                          Collaborative innovate
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet">
+                            &nbsp;
+                          </span>
+                          Mashups experiences plug
+                        </a>
+                      </div>
+                      
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <hr class="hr-stylish-1">
+            
+            <div class="wrapper">
+              <div id="scrollbar-two">
+                <div class="scrollbar">
+                  <div class="track">
+                    <div class="thumb">
+                      <div class="end">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="viewport">
+                  <div class="overview">
+                    <div class="featured-articles-container">
+                      <h5 class="heading-blue">
+                        Featured posts
+                      </h5>
+                      <div class="articles">
+                        <a href="#">
+                          <span class="label-bullet-blue">
+                            &nbsp;
+                          </span>
+                          Hosting Made For WordPress
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet-blue">
+                            &nbsp;
+                          </span>
+                          Reinvent cutting-edge
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet-blue">
+                            &nbsp;
+                          </span>
+                          partnerships models 24/7
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet-blue">
+                            &nbsp;
+                          </span>
+                          Eyeballs frictionless
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet-blue">
+                            &nbsp;
+                          </span>
+                          Empower deliver innovate
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet-blue">
+                            &nbsp;
+                          </span>
+                          Portals technologies
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet-blue">
+                            &nbsp;
+                          </span>
+                          Collaborative innovate
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet-blue">
+                            &nbsp;
+                          </span>
+                          Mashups experiences plug
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet-blue">
+                            &nbsp;
+                          </span>
+                          Need some interesting
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet-blue">
+                            &nbsp;
+                          </span>
+                          Portals technologies
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet-blue">
+                            &nbsp;
+                          </span>
+                          Collaborative innovate
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet-blue">
+                            &nbsp;
+                          </span>
+                          Mashups experiences plug
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet-blue">
+                            &nbsp;
+                          </span>
+                          B2B plug and play
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet-blue">
+                            &nbsp;
+                          </span>
+                          Need some interesting
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet-blue">
+                            &nbsp;
+                          </span>
+                          Portals technologies
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet-blue">
+                            &nbsp;
+                          </span>
+                          Collaborative innovate
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet-blue">
+                            &nbsp;
+                          </span>
+                          Portals technologies
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet-blue">
+                            &nbsp;
+                          </span>
+                          Collaborative innovate
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet-blue">
+                            &nbsp;
+                          </span>
+                          Mashups experiences plug
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet-blue">
+                            &nbsp;
+                          </span>
+                          B2B plug and play
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet-blue">
+                            &nbsp;
+                          </span>
+                          Need some interesting
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet-blue">
+                            &nbsp;
+                          </span>
+                          Portals technologies
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet-blue">
+                            &nbsp;
+                          </span>
+                          Collaborative innovate
+                        </a>
+                        <a href="#">
+                          <span class="label-bullet-blue">
+                            &nbsp;
+                          </span>
+                          Mashups experiences plug
+                        </a>
+                      </div>
+                      
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Right Sidebar End -->
+        </div>
+        <!-- Dashboard Wrapper End -->
+
+      
+
+      </div>
+    </div>
+    <!-- Main Container end -->
+
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/jquery.scrollUp.js"></script>
+  
+    
+    <!-- Sparkline JS -->
+    <script src="../assets/js/sparkline.js"></script>
+    
+    <!-- Tiny Scrollbar JS -->
+    <script src="../assets/js/tiny-scrollbar.js"></script>
+    
+    <!-- Flot Charts -->
+    <script src="../assets/js/flot/jquery.flot.js"></script>
+    <script src="../assets/js/flot/jquery.flot.orderBar.min.js"></script>
+    <script src="../assets/js/flot/jquery.flot.pie.min.js"></script>
+    <script src="../assets/js/flot/jquery.flot.stack.min.js"></script>
+    <script src="../assets/js/flot/jquery.flot.tooltip.min.js"></script>
+    <script src="../assets/js/flot/jquery.flot.resize.min.js"></script>
+
+    <script src="../assets/js/flot/custom/line.js"></script>
+    <script src="../assets/js/flot/custom/area.js"></script>
+    <script src="../assets/js/flot/custom/stacked-area.js"></script>
+    <script src="../assets/js/flot/custom/vertical.js"></script>
+    <script src="../assets/js/flot/custom/horizontal.js"></script>
+    <script src="../assets/js/flot/custom/stacked-vertical.js"></script>
+    <script src="../assets/js/flot/custom/stacked-horizontal.js"></script>
+    <script src="../assets/js/flot/custom/rectangular-pie.js"></script>
+    <script src="../assets/js/flot/custom/realtime.js"></script>
+    <script src="../assets/js/flot/custom/pie.js"></script>
+    <script src="../assets/js/flot/custom/donut.js"></script>
+    <script src="../assets/js/flot/custom/scatter.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../assets/js/menu.js"></script>
+    
+    <script type="text/javascript">
+      //ScrollUp
+     
+
+      //Tooltip
+      $('a').tooltip('hide');
+      $('i').tooltip('hide');
+
+      //Tiny Scrollbar
+      $('#scrollbar').tinyscrollbar();
+      
+      $('#scrollbar-two').tinyscrollbar();
+
+    </script>
+
+  </body>
+</html>
